@@ -27,7 +27,7 @@ public class TrainService implements TrainDetailService {
     }
 
     public List<Train> getAllTrains() {
-        return trainRepository.findAll();
+        return (List<Train>) trainRepository.findAll();
     }
 
 
